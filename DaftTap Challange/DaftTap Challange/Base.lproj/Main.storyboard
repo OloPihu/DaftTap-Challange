@@ -280,6 +280,7 @@
         <image name="buttonImage" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="CvM-n9-FqO"/>
         <segue reference="oOr-Km-s07"/>
     </inferredMetricsTieBreakers>
 </document>

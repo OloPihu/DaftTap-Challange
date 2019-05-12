@@ -25,17 +25,9 @@ class SecondViewController: UIViewController {
     var score = 0
     
     var timer:Timer?
-    var miliseconds:Float = 8 * 1000
+    var miliseconds:Float = 5 * 1000
     var miliseconds2:Float = 3 * 1000
     var timerView:Timer?
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
-         timer2()
-        timerView = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(timer2), userInfo: nil, repeats: true)
-        
-        RunLoop.main.add(timerView!, forMode: .common)    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +35,10 @@ class SecondViewController: UIViewController {
         self.navigationItem.hidesBackButton = true
         
         prepareView.alpha = 1
+        timer2()
+        timerView = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(timer2), userInfo: nil, repeats: true)
         
+        RunLoop.main.add(timerView!, forMode: .common)
         infoLabel.text = "Your task is to press the dog icon as many times as possible within 5 seconds"
         infoLabel.textColor = UIColor.lightGray
         infoLabel.font = UIFont(name:"ArialRoundedMTBold", size: 20)
@@ -63,9 +58,7 @@ class SecondViewController: UIViewController {
         scoreLabel.textColor = UIColor.white
         scoreLabel.font = UIFont(name:"ArialRoundedMTBold", size: 40)
         
-        timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(timerElapsed), userInfo: nil, repeats: true)
-        
-        RunLoop.main.add(timer!, forMode: .common)
+       
         
         
         
@@ -147,7 +140,7 @@ class SecondViewController: UIViewController {
     @objc func timer2() {
         
         
-        miliseconds -= 1
+        miliseconds2 -= 1
         
         let seconds =  String(format: "%.2f", miliseconds2/1000)
         
@@ -157,12 +150,13 @@ class SecondViewController: UIViewController {
         
         if miliseconds2 <= 0 {
             
-            timer?.invalidate()
+            timerView?.invalidate()
             
             prepareView.alpha = 0
             
+            timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(timerElapsed), userInfo: nil, repeats: true)
             
-        }
+            RunLoop.main.add(timer!, forMode: .common)        }
     }}
 
 
