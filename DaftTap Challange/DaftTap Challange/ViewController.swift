@@ -29,7 +29,7 @@ class ViewController: UIViewController {
 
             
             
-            highScoreLabel.text = "Players with high score"
+            highScoreLabel.text = "High score"
             highScoreLabel.textColor = UIColor.black
             highScoreLabel.font = UIFont(name:"ArialRoundedMTBold", size: 15)
             

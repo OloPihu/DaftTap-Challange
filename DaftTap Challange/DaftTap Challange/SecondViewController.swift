@@ -10,6 +10,11 @@ import UIKit
 class SecondViewController: UIViewController {
     
     
+    @IBOutlet weak var prepareView: UIView!
+    @IBOutlet weak var infoLabel: UILabel!
+    
+    @IBOutlet weak var countingLabel: UILabel!
+    
     @IBOutlet weak var timerTextLabel: UILabel!
     @IBOutlet weak var buttonView: UIButton!
     @IBOutlet weak var timeLabel: UILabel!
@@ -20,13 +25,29 @@ class SecondViewController: UIViewController {
     var score = 0
     
     var timer:Timer?
-    var miliseconds:Float = 5 * 1000
+    var miliseconds:Float = 8 * 1000
+    var miliseconds2:Float = 3 * 1000
+    var timerView:Timer?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+         timer2()
+        timerView = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(timer2), userInfo: nil, repeats: true)
+        
+        RunLoop.main.add(timerView!, forMode: .common)    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.hidesBackButton = true
+        
+        prepareView.alpha = 1
+        
+        infoLabel.text = "Your task is to press the dog icon as many times as possible within 5 seconds"
+        infoLabel.textColor = UIColor.lightGray
+        infoLabel.font = UIFont(name:"ArialRoundedMTBold", size: 20)
+        
         
         timerTextLabel.text = "Remaining seconds to pat the dog"
         timerTextLabel.textColor = UIColor.lightGray
@@ -46,6 +67,8 @@ class SecondViewController: UIViewController {
         
         RunLoop.main.add(timer!, forMode: .common)
         
+        
+        
     }
     
     
@@ -57,26 +80,13 @@ class SecondViewController: UIViewController {
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        
-        
-    }
-    
     @objc func timerElapsed() {
         
         miliseconds -= 1
         
-        
-        
         let seconds =  String(format: "%.2f", miliseconds/1000)
-        
-        
-        
+    
         timeLabel.text = "\(seconds)"
-        
-        
         
         if miliseconds <= 0 {
             
@@ -134,6 +144,25 @@ class SecondViewController: UIViewController {
         
     }
     
-}
+    @objc func timer2() {
+        
+        
+        miliseconds -= 1
+        
+        let seconds =  String(format: "%.2f", miliseconds2/1000)
+        
+        countingLabel.text = "Seconds to Start: \(seconds)"
+        countingLabel.textColor = UIColor.white
+        countingLabel.font = UIFont(name:"ArialRoundedMTBold", size: 15)
+        
+        if miliseconds2 <= 0 {
+            
+            timer?.invalidate()
+            
+            prepareView.alpha = 0
+            
+            
+        }
+    }}
 
 
