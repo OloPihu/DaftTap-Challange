@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		285A85492288545B00D51420 /* SoundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A85482288545B00D51420 /* SoundService.swift */; };
+		285A854B228855BB00D51420 /* endAlertSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 285A854A228855BB00D51420 /* endAlertSound.wav */; };
+		285A854D22885A9800D51420 /* patSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 285A854C22885A9800D51420 /* patSound.wav */; };
+		285A855122888A3E00D51420 /* highScore.wav in Resources */ = {isa = PBXBuildFile; fileRef = 285A855022888A3E00D51420 /* highScore.wav */; };
+		285F067A22875D3800324BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F067922875D3800324BBC /* AppDelegate.swift */; };
+		285F067C22875D3800324BBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F067B22875D3800324BBC /* ViewController.swift */; };
+		285F067F22875D3800324BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285F067D22875D3800324BBC /* Main.storyboard */; };
+		285F068122875D3900324BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285F068022875D3900324BBC /* Assets.xcassets */; };
+		285F068422875D3900324BBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285F068222875D3900324BBC /* LaunchScreen.storyboard */; };
+		285F068C228770D200324BBC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F068B228770D200324BBC /* SecondViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		285A85482288545B00D51420 /* SoundService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundService.swift; sourceTree = "<group>"; };
+		285A854A228855BB00D51420 /* endAlertSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = endAlertSound.wav; sourceTree = "<group>"; };
+		285A854C22885A9800D51420 /* patSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = patSound.wav; sourceTree = "<group>"; };
+		285A855022888A3E00D51420 /* highScore.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = highScore.wav; sourceTree = "<group>"; };
+		285F067622875D3800324BBC /* DaftTap Challange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DaftTap Challange.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		285F067922875D3800324BBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		285F067B22875D3800324BBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		285F067E22875D3800324BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		285F068022875D3900324BBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		285F068322875D3900324BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		285F068522875D3900324BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		285F068B228770D200324BBC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		285F067322875D3800324BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		285A85452288541E00D51420 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				285A855022888A3E00D51420 /* highScore.wav */,
+				285A854C22885A9800D51420 /* patSound.wav */,
+				285A854A228855BB00D51420 /* endAlertSound.wav */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		285F066D22875D3800324BBC = {
+			isa = PBXGroup;
+			children = (
+				285F067822875D3800324BBC /* DaftTap Challange */,
+				285F067722875D3800324BBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		285F067722875D3800324BBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				285F067622875D3800324BBC /* DaftTap Challange.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		285F067822875D3800324BBC /* DaftTap Challange */ = {
+			isa = PBXGroup;
+			children = (
+				285F067922875D3800324BBC /* AppDelegate.swift */,
+				285F067B22875D3800324BBC /* ViewController.swift */,
+				285F068B228770D200324BBC /* SecondViewController.swift */,
+				285A85482288545B00D51420 /* SoundService.swift */,
+				285F067D22875D3800324BBC /* Main.storyboard */,
+				285F068022875D3900324BBC /* Assets.xcassets */,
+				285F068222875D3900324BBC /* LaunchScreen.storyboard */,
+				285F068522875D3900324BBC /* Info.plist */,
+				285A85452288541E00D51420 /* sounds */,
+			);
+			path = "DaftTap Challange";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		285F067522875D3800324BBC /* DaftTap Challange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 285F068822875D3900324BBC /* Build configuration list for PBXNativeTarget "DaftTap Challange" */;
+			buildPhases = (
+				285F067222875D3800324BBC /* Sources */,
+				285F067322875D3800324BBC /* Frameworks */,
+				285F067422875D3800324BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DaftTap Challange";
+			productName = "DaftTap Challange";
+			productReference = 285F067622875D3800324BBC /* DaftTap Challange.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		285F066E22875D3800324BBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					285F067522875D3800324BBC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 285F067122875D3800324BBC /* Build configuration list for PBXProject "DaftTap Challange" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 285F066D22875D3800324BBC;
+			productRefGroup = 285F067722875D3800324BBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				285F067522875D3800324BBC /* DaftTap Challange */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		285F067422875D3800324BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285F068422875D3900324BBC /* LaunchScreen.storyboard in Resources */,
+				285A854D22885A9800D51420 /* patSound.wav in Resources */,
+				285F068122875D3900324BBC /* Assets.xcassets in Resources */,
+				285A855122888A3E00D51420 /* highScore.wav in Resources */,
+				285A854B228855BB00D51420 /* endAlertSound.wav in Resources */,
+				285F067F22875D3800324BBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		285F067222875D3800324BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285F068C228770D200324BBC /* SecondViewController.swift in Sources */,
+				285A85492288545B00D51420 /* SoundService.swift in Sources */,
+				285F067C22875D3800324BBC /* ViewController.swift in Sources */,
+				285F067A22875D3800324BBC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		285F067D22875D3800324BBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				285F067E22875D3800324BBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		285F068222875D3900324BBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				285F068322875D3900324BBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		285F068622875D3900324BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		285F068722875D3900324BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		285F068922875D3900324BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z7Y2TG47SB;
+				INFOPLIST_FILE = "DaftTap Challange/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aleksander.DaftTap-Challange";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		285F068A22875D3900324BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z7Y2TG47SB;
+				INFOPLIST_FILE = "DaftTap Challange/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aleksander.DaftTap-Challange";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		285F067122875D3800324BBC /* Build configuration list for PBXProject "DaftTap Challange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				285F068622875D3900324BBC /* Debug */,
+				285F068722875D3900324BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		285F068822875D3900324BBC /* Build configuration list for PBXNativeTarget "DaftTap Challange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				285F068922875D3900324BBC /* Debug */,
+				285F068A22875D3900324BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 285F066E22875D3800324BBC /* Project object */;
+}
